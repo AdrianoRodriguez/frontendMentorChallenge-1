@@ -1,0 +1,141 @@
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+/* Fraunces */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Fraunces', serif; */
+}
+body {
+    background-color: #f2ebe3;
+}
+:root {
+    --color-darkCyan: #3c8067;
+    --color-grey: #989694;
+    --color-white: #fff;
+}
+
+
+/* STYLES */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+}
+
+/* IMAGE */
+.img {
+    width: 300px;
+    height: 450px;
+}
+
+
+/* CONTAINER TEXT */
+
+.container__text {
+    width: 300px;
+    height: max-content;
+    padding: 0 30px;
+}
+
+
+/* PRODUCT INFORMATION */
+
+.product__name {
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    color: #1c232b;
+}
+.product__description {
+    font-size: 14px;
+}
+.paragraph {
+    color: var(--color-grey);
+    margin: 0;
+}
+
+
+/* PRICE */
+.price {
+    display: flex;
+    align-items: center;
+}
+.offer__price {
+    font-family: 'Fraunces', serif;
+    margin-right: 30px;
+    display: inline-block;
+    color: var(--color-darkCyan);
+}
+.original__price {
+    color: var(--color-grey);
+}
+
+
+/* BUTTON */
+
+.add__to__cart {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 10px;
+    background-color: var(--color-darkCyan);
+}
+.button__text {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 5px;
+    margin: 0;
+    color: var(--color-white);
+}
+
+
+/* FOOTER */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 50px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* MOBILE VERSION */
+
+@media screen and (max-width: 650px) {
+    .container {
+        flex-direction: column;
+        width: max-content;
+        border-radius: 15px;
+    }
+    .img {
+        width: 340px;
+        height: 240px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+        object-position: 0 35%;
+    }
+    .container__text {
+        padding: 20px 0;
+    }
+    .product__name {
+        font-size: 32px;
+    }
+    .product__description {
+        font-size: 13px;
+    }
+    
+}
